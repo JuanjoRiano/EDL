@@ -19,7 +19,7 @@ public class Pila<T> {
     }
 
     public T pop () {
-        if (estaVacia()) {
+        if (isEmpty()) {
             throw new IllegalStateException("La pila está vacía");
         }
         T dato = tope.getDato();
@@ -28,18 +28,18 @@ public class Pila<T> {
         return dato;
     }
 
-    public T cima() {
-        if (estaVacia()) {
+    public T peek() {
+        if (isEmpty()) {
             throw new IllegalStateException("La pila está vacía");
         }
         return tope.getDato();
     }
 
-    public boolean estaVacia() {
+    public boolean isEmpty() {
         return tope == null;
     }
 
-    public int tamaño() {
+    public int size() {
         return tamaño;
     }
 }

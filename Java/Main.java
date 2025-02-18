@@ -11,8 +11,8 @@ public class Main {
         pila.push(35);
         pila.pop();
         pila.pop();
-        System.out.println("Tamaño de la pila: " + pila.tamaño()); // 2
-        System.out.println("Cima de la pila: " + pila.cima()); // 15
+        System.out.println("Tamaño de la pila: " + pila.size()); // 2
+        System.out.println("Cima de la pila: " + pila.peek()); // 15
 
         // Cola de cadenas
         Cola<String> cola = new Cola<>();
